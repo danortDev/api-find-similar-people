@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Find similar people
 This API will let you search for a candidate profile to find other people that does the same.
 Right now it will just look for first and second level connections that have the same `professionalHeading`

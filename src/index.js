@@ -18,5 +18,5 @@ app.use((req, res, next) => {
 app.use('/candidate', candidateRoutes);
 app.use('/people', peopleRoutes);
 
-app.listen(8080);
-console.log('Server started! API listening to port 8080');
+app.listen(process.env.PORT || 8080);
+console.log(`Server started! API listening to port ${process.env.PORT || 8080}`);

@@ -6,7 +6,7 @@ import candidateRoutes from './routes/candidate';
 import peopleRoutes from './routes/people';
 
 dotenv.config();
-initDB();
+// initDB();
 
 const app = express();
 

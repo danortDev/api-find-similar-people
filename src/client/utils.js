@@ -19,7 +19,7 @@ const buildConnection = ({ person }) => {
 const buildTopConnections = (professionalHeadline, connections) => {
   return connections.reduce((result, connection) => {
     const { person, degress } = connection;
-    
+
     const isSimilar = person.professionalHeadline
       .toLowerCase()
       .includes(professionalHeadline.toLowerCase());
@@ -33,7 +33,7 @@ const buildTopConnections = (professionalHeadline, connections) => {
 };
 
 
-const buildCandidate = (bios, connections) => {
+export const buildCandidate = (bios, connections) => {
   const {
     person: {
       id,
@@ -58,4 +58,10 @@ const buildCandidate = (bios, connections) => {
   };
 };
 
-export default buildCandidate;
+
+export const buildPeople = (people) => {
+  return people.map((person) => ({
+    name: person.name,
+    username: person.publicId
+  }));
+};

@@ -21,8 +21,9 @@ const buildTopConnections = (professionalHeadline, connections) => {
     const { person, degress } = connection;
 
     const isSimilar = person.professionalHeadline
-      .toLowerCase()
-      .includes(professionalHeadline.toLowerCase());
+      && person.professionalHeadline
+        .toLowerCase()
+        .includes(professionalHeadline.toLowerCase());
 
     const isClose = degress <= 2;
 

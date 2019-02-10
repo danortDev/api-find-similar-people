@@ -7,6 +7,7 @@ or that includes the candidate's `professionalHeading`.
 ## Running the project
 All just need is to have yarn installed. Then you should run:
 - `npm install`
+- `create a .env file with DATA_BASE_PATH` (i will provide this value via slack).
 - `npm start`
 
 ## Endpoints

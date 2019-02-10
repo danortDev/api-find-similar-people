@@ -1,12 +1,11 @@
 import 'babel-polyfill';
 import express from 'express';
 import dotenv from 'dotenv';
-import initDB from './db/index.js';
 import candidateRoutes from './routes/candidate';
 import peopleRoutes from './routes/people';
 
 dotenv.config();
-initDB();
+/* TODO: fix database connection on Heroku and init DB */
 
 const app = express();
 
@@ -20,4 +19,4 @@ app.use('/candidate', candidateRoutes);
 app.use('/people', peopleRoutes);
 
 app.listen(8080);
-console.log('Server started! API listening to port 3030');
+console.log('Server started! API listening to port 8080');
